@@ -26,6 +26,13 @@ library SignedWadMath {
         }
     }
 
+    // TODO: 
+    // toWadUnsafe: should transform to correct number of wads, if x is small enough
+    // toWadUnsafe: transforming from wads should result in the same starting number
+    // toDaysWadUnsafe: should transform to the correct number of days in wads, if x is small enough
+    // toDaysWadUnsafe: Similar number of seconds should convert to the same number of days in non-wads
+    // fromDaysWadUnsafe: 
+
     /// @dev Takes a wad amount of days and converts it to an integer amount of seconds.
     /// @dev Will not revert on overflow, only use where overflow is not possible.
     /// @dev Not meant for negative day amounts, it assumes x is positive.

@@ -12,4 +12,3 @@ contract MyToken is ERC20Burn {
         return totalSupply <= 10**18;
     }
 }
-
